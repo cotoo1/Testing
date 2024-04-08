@@ -1,0 +1,93 @@
+*{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.portada{
+    background: url(img/test2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    /* añadimos un display flex para que podamos centrar los items */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+.navbar{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.733)50%,rgba(0, 0, 0, 0));
+}
+
+.barra-lateral{
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+a.nav-link{
+    font-size: large;
+    color: rgb(194, 191, 191);
+}
+a.nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+a.nav-link{
+    margin-right: 5px;
+}
+
+.logo-nav{
+    margin-left: 30px;
+} 
+.carrito-nav {
+    margin: 0 20px; 
+}
+
+a.navbar-brand.carrito-nav{
+    filter: invert(1);
+
+}
+
+.boton-comprar-ahora{
+    text-decoration: none;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: 70px;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(30px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    transition: background-color 0.3s ease;
+}
+.boton-comprar-ahora:hover{
+    background-color: rgba(250, 250, 250, 0.651);
+    color: black;
+    backdrop-filter: blur(10px);
+}
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+p.comprar{
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.card{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.card:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.836);
+}
+h6.nuevacoleccion{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+}
+.botoncard:hover{
+    background-color: blue;
+}
+
