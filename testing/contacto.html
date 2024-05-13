@@ -83,6 +83,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html" style="color: antiquewhite;">Contacto</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -111,7 +114,13 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
+	  <hr>
+	  <h2><strong>Nos puedes encontrar en: </strong></h2>
+      <div class="ratio ratio-16x9" id="mapa">
+        <div id="map"></div> <!-- Mapa dentro del contenedor -->
+      </div>
     </div>
+	
     <!-- FOOTER DE LA PÁGINA -->
     <footer class="bg-dark text-white text-center text-lg-center" style="font-family: 'Roboto Slab', serif;">
       <div class="container p-4">
@@ -129,6 +138,9 @@
         </div>
       </div>
     </footer>
+	
+	<script src="js/apiMap.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6-i6Mxt1R2X4ZCEUydaLG5HO1Ze-Cb5w&libraries=places&callback=iniciarMapa"></script>
   </body>
       
 </html>

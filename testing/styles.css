@@ -14,6 +14,25 @@
     align-items: end;
     text-align: center;
 }
+.login{
+    background: url(img/test2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    /* añadimos un display flex para que podamos centrar los items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.registro{
+    text-align: center;
+
+}
+
 .navbar{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.733)50%,rgba(0, 0, 0, 0));
 }
@@ -45,7 +64,23 @@ a.navbar-brand.carrito-nav{
     filter: invert(1);
 
 }
+.formularios{
+    text-decoration: none;
+    color: blanchedalmond;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
 
+.form-control{
+    background-color: blanchedalmond;
+    color: #000000;
+}
+.boton{
+    background-color: rgba(31, 202, 224, 0.658);
+    padding: 15px 0;
+}
 .boton-comprar-ahora{
     text-decoration: none;
     color: blanchedalmond;
@@ -89,4 +124,15 @@ h6.nuevacoleccion{
 }
 .botoncard:hover{
     background-color: blue;
+}
+
+.error-control{
+    border:1px solid rgb(133, 28, 28);
+}
+label.error{
+    color:rgb(255, 0, 0);
+    width: 200px;
+    font-size: 1em;
+    margin-top:-5px;
+    margin-bottom:10px;
 }

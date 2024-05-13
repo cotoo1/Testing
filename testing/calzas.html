@@ -27,7 +27,7 @@
     <link rel="icon" type="image/png" href="img/logoheader.png" />
     <title>Testing Chile</title>
   </head>
-  <body>
+  <body onload="mostrarCalzas()">
     <!-- BARRA DE NAVEGACION -->
     <div>
       <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
@@ -83,6 +83,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -128,89 +131,21 @@
     <div style="background-color: #f5f5f5;">
       <div class="container pt-5 seccionnuevacoleccion">
       <h6 class="text-center mb-5 nuevacoleccion"> Calzas</h6>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/1.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/2.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/3.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/4.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-2">
+        <select name="color" id="color" class="form-select" onchange="buscarTipo()" style="margin-bottom: 5px;">
+          <option value="0">Seleccione color:</option>
+          <option value="rosado">Rosado</option>
+          <option value="azul">Azul</option>
+          <option value="cafe">Cafe</option>
+          <option value="blanco">Blanco</option>
+          <option value="amarillo">Amarillo</option>
+          <option value="burdeo">Burdeo</option>
+          <option value="naranjo">Naranjo</option>
+          </select>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/5.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/6.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/7.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-img-top mx-auto" src="img/calzas/8.jpg">
-            <div class="card-body">
-              <h5 class="card-title">$11.990</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary col-12 botoncard" data-bs-toggle="modal" data-bs-target="#modalCorrecto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
+
+      <br>
+      <div class="row" id="calzas">
       </div>
       </div>
     </div>
@@ -249,6 +184,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/apiCalzas.js"></script>
   </body>
       
 </html>
