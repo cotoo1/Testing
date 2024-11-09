@@ -1,2 +1,2 @@
-# ProyectoBootstrap
-Proyecto hecho con HTML,CSS y bootstrap
+# Testing
+Proyecto personal sobre un e-commerce usando HTML/CSS/JavaScript con Python/Django
